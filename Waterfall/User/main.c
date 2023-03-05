@@ -9,7 +9,7 @@ int main(void)
 	GPIO_Instructure.GPIO_Pin=GPIO_Pin_All;//配置GPIOA的所有Pin
 	//GPIO_Instructure.GPIO_Pin=GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3;//初始化三个端口，按位或，同理RCC_APB2Periph_GPIOA以及SetBits也能这么操作，不信go to defination
 	GPIO_Instructure.GPIO_Speed=GPIO_Speed_50MHz;
-	GPIO_Init(GPIOA,&GPIO_Instructure);
+	GPIO_Init(GPIOA,&GPIO_Instructure);//别忘了初始化上面的配置，用结构体GPIO_Instructure的好处在于，初始化这个结构体就行了，不用一句一句初始化
 	while (1)
 	{
 		//GPIO_WriteBit(GPIOA,GPIO_Pin_1,Bit_SET);
