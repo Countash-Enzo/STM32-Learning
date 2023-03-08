@@ -1,3 +1,5 @@
+#include "stm32f10x.h"                  // Device header
+
 #ifndef __Key_H
 #define __Key_H
 uint8_t Key_GetNum(void);

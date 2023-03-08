@@ -871,7 +871,7 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
-F (.\LED.h)(0x64075671)()
+F (.\LED.h)(0x6408A4AE)()
 F (.\Key.c)(0x640754F7)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-IF:\KEIL5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
@@ -901,7 +901,7 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
-F (.\Key.h)(0x64075671)()
+F (.\Key.h)(0x6408A4AE)()
 F (.\User\main.c)(0x640754F7)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-IF:\KEIL5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
