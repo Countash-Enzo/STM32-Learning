@@ -1,0 +1,32 @@
+#include "stm32f10x.h"                  // Device header
+#include "Delay.h"
+#include "OLED.h"
+#include "Timer.h"
+
+uint16_t Num;
+
+int main(void)
+{
+	Timer_Init();
+	OLED_Init();
+	
+	OLED_ShowString(1,1,"Num:");
+	
+	while (1)
+	{
+		OLED_ShowNum(1,5,Num,5);
+    OLED_ShowNum(2,5,TIM_GetCounter(TIM2),5);//看一下CNT计数器的计数变化，他会一直到自动重装值（这里我们写的10000-1）
+	}
+
+}
+
+void TIM2_IRQHandler(void)
+{
+	if(TIM_GetITStatus(TIM2,TIM_IT_Update)==SET)//获取中断标志位
+	{
+		Num++;
+		TIM_ClearITPendingBit(TIM2,TIM_IT_Update);//清除中断标志位，这很重要！！
+	}
+}
+//本项目是个简单的定时器计数。
+//是个秒表，每秒OLED上显示的计数+1
